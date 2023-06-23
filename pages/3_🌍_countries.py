@@ -36,7 +36,7 @@ def plot_restaurant_count_by_country(df1):
                 textposition='auto',
                 marker=dict(color='royalblue')
             )])
-    fig.update_layout(title=dict(text="Quantidade de Restaurantes Registrados por País", x=0.30,font=dict(size=20)))  
+    fig.update_layout(title=dict(text="Quantidade de Restaurantes Registrados por País", x=0.25,font=dict(size=20)))  
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Restaurantes")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
@@ -63,7 +63,7 @@ def plot_city_count_by_country(df1):
                 textposition='auto',
                 marker=dict(color='royalblue')
             )])
-    fig.update_layout(title=dict(text="Quantidade de Cidades Registrados por País", x=0.30,font=dict(size=20))) 
+    fig.update_layout(title=dict(text="Quantidade de Cidades Registrados por País", x=0.25,font=dict(size=20))) 
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Cidades")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
@@ -91,7 +91,7 @@ def plot_average_rating_by_country(df1):
                 textposition='auto',
                 marker=dict(color='royalblue')
             )])
-    fig.update_layout(title=dict(text="Avaliação Média por País", x=0.30,font=dict(size=20))) 
+    fig.update_layout(title=dict(text="Avaliação Média por País", x=0.25,font=dict(size=20))) 
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Avaliações")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
@@ -120,7 +120,7 @@ def plot_average_cost_for_two_by_country(df1):
                 textposition='auto',
                 marker=dict(color='royalblue')
             )])
-    fig.update_layout(title=dict(text="Preço Médio de um Prato para Duas Pessoas por País",  x=0.15,font=dict(size=17))) 
+    fig.update_layout(title=dict(text="Preço Médio de um Prato para Duas Pessoas por País",  x=0.25,font=dict(size=17))) 
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="preço de Prato para Duas Pessoas")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
