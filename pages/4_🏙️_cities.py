@@ -37,7 +37,7 @@ def top_city_resisted_restaurant(df1):
                              labels = { 'restaurant_id' : 'Restaurante',
                                          'city' : 'Cidade' ,
                                           'country' : 'País'} ) )
-    fig.update_layout(title=dict(text='Top 10 Cidades com mais Restaurantes na Base de Dados', x=0.30, font=dict(size=20)))
+    fig.update_layout(title=dict(text='Top 10 Cidades com mais Restaurantes na Base de Dados', x=0.5, font=dict(size=20)))
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
     fig = st.plotly_chart(fig, use_container_width = True)
     return fig
@@ -95,7 +95,7 @@ def plot_top_cities_cuisines(df1):
                              labels = { 'cuisines' : 'Tipos Culinários',
                                          'city' : 'Cidade' ,
                                           'country' : 'País'} ) )
-    fig.update_layout(title=dict(text='Top 10 cidades com maiores diversidades gastronômicas', x=0.30,font=dict(size=20)))
+    fig.update_layout(title=dict(text='Top 10 cidades com maiores diversidades gastronômicas', x=0.50,font=dict(size=20)))
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
     fig = st.plotly_chart(fig, use_container_width = True)
     return fig
