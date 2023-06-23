@@ -36,7 +36,7 @@ def plot_restaurant_count_by_country(df1):
                 textposition='auto',
                 marker=dict(color='royalblue')
             )])
-    fig.update_layout(title=dict(text="Quantidade de Restaurantes Registrados por País", x=0.25,font=dict(size=20)))  
+    fig.update_layout(title=dict(text="Quantidade de Restaurantes Registrados por País", x=0.5,font=dict(size=20)))  
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Restaurantes")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
@@ -63,7 +63,7 @@ def plot_city_count_by_country(df1):
                 textposition='auto',
                 marker=dict(color='royalblue')
             )])
-    fig.update_layout(title=dict(text="Quantidade de Cidades Registrados por País", x=0.25,font=dict(size=20))) 
+    fig.update_layout(title=dict(text="Quantidade de Cidades Registrados por País", x=0.5,font=dict(size=20))) 
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Cidades")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
@@ -86,7 +86,7 @@ def plot_average_rating_by_country(df1):
          .reset_index().round(2) )
 
     fig = go.Figure(data=[go.Bar(
-                x=df_aux['country'], y=df_aux['aggregate_rating'],width=0.75,
+                x=df_aux['country'], y=df_aux['aggregate_rating'],
                 text=df_aux['aggregate_rating'],
                 textposition='auto',
                 marker=dict(color='royalblue')
@@ -115,7 +115,7 @@ def plot_average_cost_for_two_by_country(df1):
        .reset_index().round(2) )
 
     fig = go.Figure(data=[go.Bar(
-                x=df_aux['country'], y=df_aux['average_cost_for_two'],width=0.75,
+                x=df_aux['country'], y=df_aux['average_cost_for_two'],
                 text=df_aux['average_cost_for_two'],
                 textposition='auto',
                 marker=dict(color='royalblue')
