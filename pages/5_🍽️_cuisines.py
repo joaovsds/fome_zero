@@ -112,7 +112,7 @@ def display_top_cuisines(df1,date_slider,title,ascending):
     fig.update_yaxes(title_text="Média de Avalição")
     fig.update_layout(title=dict(text=title,x = 0.5,font=dict(size=18)))   
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
-    fig = st.plotly_chart(fig, use_container_width=True)
+    fig = st.plotly_chart(fig)
     return fig
     
 def rename_columns(df):

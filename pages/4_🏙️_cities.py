@@ -39,7 +39,7 @@ def top_city_resisted_restaurant(df1):
                                           'country' : 'País'} ) )
     fig.update_layout(title=dict(text='Top 10 Cidades com mais Restaurantes na Base de Dados', x=0.5, font=dict(size=20)))
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
-    fig = st.plotly_chart(fig, use_container_width = True)
+    fig = st.plotly_chart(fig)
     return fig
 def plot_top_cities(condition,title):
     """ Esta função gera um gráfico de barras mostrando as principais cidades com base em uma condição de avaliação
@@ -71,7 +71,7 @@ def plot_top_cities(condition,title):
                           'country': 'País'}))
     fig.update_layout(xaxis=dict(showgrid=False), yaxis=dict(showgrid=False))
     fig.update_layout(title=dict(text=title, font=dict(size=17)))
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig)
     
 def plot_top_cities_cuisines(df1):
     """ Esta função exibe um gráfico de barras mostrando as principais cidades com maior diversidade gastronômica
@@ -97,7 +97,7 @@ def plot_top_cities_cuisines(df1):
                                           'country' : 'País'} ) )
     fig.update_layout(title=dict(text='Top 10 cidades com maiores diversidades gastronômicas', x=0.50,font=dict(size=20)))
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
-    fig = st.plotly_chart(fig, use_container_width = True)
+    fig = st.plotly_chart(fig)
     return fig
     
 def rename_columns(df):

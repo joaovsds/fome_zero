@@ -40,7 +40,7 @@ def plot_restaurant_count_by_country(df1):
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Restaurantes")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
-    fig = st.plotly_chart(fig, use_container_width = False)
+    fig = st.plotly_chart(fig)
     return fig
 
 def plot_city_count_by_country(df1):
@@ -95,7 +95,7 @@ def plot_average_rating_by_country(df1):
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Avaliações")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
-    fig = st.plotly_chart(fig, use_container_width = True)
+    fig = st.plotly_chart(fig)
     return fig
 
 
@@ -124,7 +124,7 @@ def plot_average_cost_for_two_by_country(df1):
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="preço de Prato para Duas Pessoas")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
-    fig = st.plotly_chart(fig, use_container_width = True, width=700, height=300)
+    fig = st.plotly_chart(fig)
     return fig
 
 def rename_columns(df):
