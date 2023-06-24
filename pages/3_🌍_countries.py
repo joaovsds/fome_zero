@@ -40,7 +40,7 @@ def plot_restaurant_count_by_country(df1):
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Restaurantes")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
-    fig = st.plotly_chart(fig, use_container_width = True)
+    fig = st.plotly_chart(fig, use_container_width = False)
     return fig
 
 def plot_city_count_by_country(df1):
@@ -67,7 +67,7 @@ def plot_city_count_by_country(df1):
     fig.update_xaxes(title_text="Países")
     fig.update_yaxes(title_text="Cidades")
     fig.update_layout( xaxis=dict(showgrid=False), yaxis=dict(showgrid=False) )
-    fig = st.plotly_chart(fig, use_container_width = True)
+    fig = st.plotly_chart(fig)
     return fig
 
       
